@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AutocompleteComponent } from './autocomplete/autocomplete.component';
 
 @Component({
   selector: 'app-root',

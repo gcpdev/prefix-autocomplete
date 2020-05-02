@@ -17,7 +17,7 @@ export interface Prefix {
 })
 export class AutocompleteComponent implements OnInit {
 
-  readonly PREFIX_URL = 'http://prefix.cc/context';
+  readonly PREFIX_URL = 'https://prefix.cc/context';
 
   prefixesJson = [];
 

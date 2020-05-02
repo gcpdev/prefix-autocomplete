@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { AutocompleteComponent } from './autocomplete/autocomplete.component';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,5 @@ import { AutocompleteComponent } from './autocomplete/autocomplete.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Autocomplete test app';
 }

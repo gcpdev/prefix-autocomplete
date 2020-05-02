@@ -6,10 +6,11 @@
            matInput
            [formControl]="myControl"
            [matAutocomplete]="auto">
-    <mat-autocomplete #auto="matAutocomplete">
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn" (optionSelected)='selected($event.option)'>
       <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-        {{option}}
+        <span [innerHTML]="option.name | highlight: toHighlight"></span>
       </mat-option>
     </mat-autocomplete>
   </mat-form-field>
 </form>
+<span>URL: {{selectedPrefix ? selectedPrefix.url : ''}}</span>
